@@ -1,1 +1,1 @@
-# prototype
+# simple summation of jQuery

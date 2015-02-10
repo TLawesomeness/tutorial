@@ -29,7 +29,7 @@ function add() {
 
     var oddsum = total('#odds li');
     var evensum = total('#evens li');
-
+  
     $('#oddsum').text(oddsum);
     $('#evensum').text(evensum);
 }
@@ -37,7 +37,7 @@ function add() {
 function total(selector) {
   return $(selector)
   .map(function(index, element) {
-    return parseInt(element.textContext);
+    return parseInt(element.textContent);
   }).toArray()
   .reduce(function(prev, curr) {
     return prev + curr;
